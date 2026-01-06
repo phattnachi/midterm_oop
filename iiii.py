@@ -9,12 +9,12 @@ class BackAccount:
         else:
             print('ยอดเงินต้องมากกว่า 0')
 
-        def withdraw(self, amount):
-            if amount > 0 and amount <= self.__balance:
+    def withdraw(self, amount):
+        if amount > 0 and amount <= self.__balance:
                 self.__balance -= amount
                 print(f'ถอนเงินสำเร็จ: {amount} บาท')
-            else:
+        else:
                 print(f'ถอนไม่สำเร็จ ! (ยอดเงินไม่เพียงพอ: {amount})')
 
-            def check_balance(self):
-                return self.__balance
+    def check_balance(self):
+        return self.__balance
